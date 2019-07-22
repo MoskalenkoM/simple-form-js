@@ -18,6 +18,9 @@
     "url": "https://github.com/MoskalenkoM/simple-form-js/issues"
   },
   "homepage": "https://github.com/MoskalenkoM/simple-form-js#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
@@ -30,8 +33,12 @@
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-loader": "^2.2.1",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "file-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
@@ -49,12 +56,17 @@
     ],
     "rules": {
       "no-console": "off",
+      "func-names": "off",
       "import/no-extraneous-dependencies": [
         "error",
         {
           "peerDependencies": true
         }
       ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
     }
   },
   "browserslist": [

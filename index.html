@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="dist/main.css" />
-  <script src="dist/build.js"></script>
+  <script src="dist/build.js" defer></script>
   <title>simple form js</title>
 </head>
 
-<body>
-  <h1 class="h1">Hi =)</h1>
+<body class="page">
+  <form class="send_form">
+    <input class="phone" type="tel" id="this_phone" placeholder="phone">
+    <button class="btn" id="sending_form" type="submit" disabled="true">send</button>
+  </form>
 </body>
 
 </html>
