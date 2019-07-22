@@ -1,4 +1,4 @@
-# simple-form
+# simple-form-js
 
 ## The build for start development environment
 
